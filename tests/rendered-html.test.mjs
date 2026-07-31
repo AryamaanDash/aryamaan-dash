@@ -3,10 +3,9 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 test("portfolio content is wired into the app", async () => {
-  const [page, projectsPage, themeToggle, data, css, layout, packageJson] = await Promise.all([
+  const [page, projectsPage, data, css, layout, packageJson] = await Promise.all([
     readFile(new URL("../app/page.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/projects/page.tsx", import.meta.url), "utf8"),
-    readFile(new URL("../app/theme-toggle.tsx", import.meta.url), "utf8"),
     readFile(new URL("../app/portfolio.ts", import.meta.url), "utf8"),
     readFile(new URL("../app/globals.css", import.meta.url), "utf8"),
     readFile(new URL("../app/layout.tsx", import.meta.url), "utf8"),
@@ -16,16 +15,14 @@ test("portfolio content is wired into the app", async () => {
   assert.match(page, /embedded systems, machine learning, and\s+autonomous robotics/);
   assert.match(page, /home-link/);
   assert.match(page, /name-lockup/);
-  assert.match(page, /intro-line/);
   assert.match(page, /mailto:aryamd2@uci\.edu/);
   assert.doesNotMatch(
     page,
     /signal locked|full-stack software|brand-link|intro-card|aryamaan\.dash@icloud|new Date/,
   );
-  assert.match(projectsPage, /ThemeToggle/);
   assert.match(projectsPage, /Projects/);
-  assert.match(themeToggle, /Light/);
-  assert.match(themeToggle, /Dark/);
+  assert.doesNotMatch(page, /ThemeToggle|theme-toggle|data-theme/);
+  assert.doesNotMatch(projectsPage, /ThemeToggle|theme-toggle|data-theme/);
   assert.match(data, /RISC-V RV32I Single-Cycle Processor/);
   assert.match(data, /Programmable Multi-Effects Guitar Pedal/);
   assert.match(data, /aryamaan-dash-a8589a2b7/);
@@ -44,9 +41,9 @@ test("portfolio content is wired into the app", async () => {
   );
   assert.match(css, /@keyframes letter-rise/);
   assert.match(css, /@keyframes scan/);
-  assert.match(css, /html\[data-theme="dark"\]/);
+  assert.doesNotMatch(css, /data-theme|color-scheme:\s*dark/);
   assert.match(layout, /Aryamaan Dash/);
-  assert.match(layout, /data-theme="light"/);
+  assert.doesNotMatch(layout, /theme-script|localStorage|data-theme/);
   assert.match(packageJson, /"build": "next build"/);
   assert.doesNotMatch(packageJson, /vinext|react-loading-skeleton|wrangler/);
 });

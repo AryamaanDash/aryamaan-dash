@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "decisions": [
+    {
+      "name": "List-first portfolio",
+      "description": "Use a narrow single-column layout, warm neutral surfaces, hairline dividers, restrained typography, and information-dense rows instead of cards or decorative containers."
+    },
+    {
+      "name": "Light-only appearance",
+      "description": "Keep one warm light color scheme with no theme toggle, dark-mode tokens, or stored theme preference."
+    }
+  ]
+}
