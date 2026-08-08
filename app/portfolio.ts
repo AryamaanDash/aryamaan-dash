@@ -73,7 +73,7 @@ export const projects = [
   {
     title: "TeachBack: Inverted Tutoring",
     type: "AI education",
-    href: "https://github.com/AryamaanDash/ReverseLearn",
+    href: "https://github.com/jwlee-jake/FlipLearn",
     summary:
       "A hackathon tutoring app where students teach an AI student, with memory-aware personalization and step-gated problem solving.",
     stack: ["AI UX", "Backend Schema", "Education", "Validation"],
