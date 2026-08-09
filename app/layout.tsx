@@ -8,11 +8,11 @@ export const metadata: Metadata = {
     template: "%s | Aryamaan Dash",
   },
   description:
-    "Portfolio for Aryamaan Dash, a UC Irvine computer science and engineering student interested in embedded systems, machine learning, and autonomous robotics.",
+    "Portfolio for Aryamaan Dash, a University of California-Irvine computer science and engineering student building software, embedded systems, and machine learning projects.",
   openGraph: {
     title: "Aryamaan Dash",
     description:
-      "Projects in embedded systems, machine learning models, robotics, and study tools.",
+      "Projects in AI efficiency, embedded systems, machine learning, study tools, and digital logic.",
     url: "https://aryamaan-dash.vercel.app",
     siteName: "Aryamaan Dash",
     type: "website",

@@ -5,7 +5,7 @@ import { navLinks, projects, skills } from "../portfolio";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "Projects by Aryamaan Dash across embedded systems, machine learning, audio DSP, and digital logic.",
+    "Projects by Aryamaan Dash across AI efficiency, embedded systems, machine learning, full-stack software, and digital logic.",
 };
 
 function HomeLink() {
@@ -41,8 +41,8 @@ export default function ProjectsPage() {
       <header className="page-heading">
         <h1>Projects</h1>
         <p>
-          Selected work across embedded audio, machine learning, study tools,
-          AI education, and processor design.
+          Selected work across AI efficiency, embedded audio, machine learning,
+          study tools, AI education, and processor design.
         </p>
       </header>
 

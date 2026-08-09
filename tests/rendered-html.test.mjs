@@ -12,23 +12,29 @@ test("portfolio content is wired into the app", async () => {
     readFile(new URL("../package.json", import.meta.url), "utf8"),
   ]);
 
-  assert.match(page, /embedded systems, machine learning, and\s+autonomous robotics/);
+  assert.match(page, /mathematics minor and a 3\.6 GPA/);
+  assert.match(page, /software engineering, embedded systems, and machine learning/);
   assert.match(page, /home-link/);
   assert.match(page, /name-lockup/);
-  assert.match(page, /mailto:aryamd2@uci\.edu/);
+  assert.match(page, /mailto:aryamaan\.dash@icloud\.com/);
   assert.doesNotMatch(
     page,
-    /signal locked|full-stack software|brand-link|intro-card|aryamaan\.dash@icloud|new Date/,
+    /signal locked|full-stack software|brand-link|intro-card|new Date/,
   );
   assert.match(projectsPage, /Projects/);
   assert.doesNotMatch(page, /ThemeToggle|theme-toggle|data-theme/);
   assert.doesNotMatch(projectsPage, /ThemeToggle|theme-toggle|data-theme/);
   assert.match(data, /RISC-V RV32I Single-Cycle Processor/);
+  assert.match(data, /EcoToken/);
   assert.match(data, /Programmable Multi-Effects Guitar Pedal/);
   assert.match(data, /aryamaan-dash-a8589a2b7/);
   assert.match(data, /Aryamaan-Dash-Resume\.pdf/);
   assert.match(data, /PyTorch/);
   assert.match(data, /TensorFlow/);
+  assert.match(data, /scikit-learn/);
+  assert.ok(
+    data.indexOf("EcoToken") < data.indexOf("Programmable Multi-Effects Guitar Pedal"),
+  );
   assert.ok(
     data.indexOf("Programmable Multi-Effects Guitar Pedal") <
       data.indexOf("Guitar Audio Classification Model"),

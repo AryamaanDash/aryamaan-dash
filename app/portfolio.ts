@@ -11,45 +11,57 @@ export const navLinks = [
 export const interests = [
   {
     kicker: "01",
-    title: "Embedded Systems",
+    title: "Software Engineering",
     description:
-      "Real-time C++, Verilog, soldered prototypes, and hardware-aware firmware.",
+      "Responsive React.js, HTML, and CSS interfaces, with experience contributing as both a front-end developer and team lead.",
   },
   {
     kicker: "02",
-    title: "Machine Learning",
+    title: "Embedded Systems",
     description:
-      "Audio feature extraction, model evaluation, and practical ML interfaces.",
+      "Real-time C++ DSP, Verilog, ESP32 development, Daisy Seed, and soldered prototypes.",
   },
   {
     kicker: "03",
-    title: "Autonomous Robotics",
+    title: "Machine Learning",
     description:
-      "A growing interest in perception, control, and robotics software stacks.",
+      "Audio feature extraction, classifier evaluation, PyTorch, TensorFlow, and scikit-learn.",
   },
 ] as const;
 
 export const skills = [
+  "C++",
   "Python",
   "TypeScript",
-  "C++",
+  "HTML/CSS",
   "Verilog",
-  "Next.js",
+  "R",
+  "Git",
   "Vivado",
+  "Next.js",
   "ESP32",
   "Daisy Seed",
+  "Soldering",
   "PyTorch",
   "TensorFlow",
-  "Soldering",
+  "scikit-learn",
 ] as const;
 
 export const projects = [
+  {
+    title: "EcoToken",
+    type: "AI efficiency hackathon",
+    href: "https://github.com/AryamaanDash/EcoToken",
+    summary:
+      "A Chrome extension that uses a local prompt-complexity classifier to route each Gemini prompt to the lowest-cost model tier that can handle it, with an analytics dashboard showing estimated inference cost savings and CO2 emissions prevented.",
+    stack: ["Chrome Extension", "JavaScript", "Python", "FastAPI"],
+  },
   {
     title: "Programmable Multi-Effects Guitar Pedal",
     type: "Embedded audio",
     href: "https://github.com/AryamaanDash/MultiEffectPedal",
     summary:
-      "A Daisy Seed based guitar pedal with bypass, distortion, reverb, delay, and flanger effects running real-time C++ DSP firmware.",
+      "Built a Daisy Seed-based programmable guitar pedal with selectable bypass, distortion, reverb, delay, and flanger effects. Programmed real-time embedded C++ DSP firmware using DaisySP, audio callbacks, delay-line processing, wet/dry mixing, and debounced mode switching. Soldered a perfboard prototype integrating guitar input buffering, audio jack wiring, and control inputs.",
     stack: ["C++", "DaisySP", "DSP", "Soldering"],
   },
   {
@@ -58,8 +70,8 @@ export const projects = [
     href: "https://github.com/AryamaanDash/guitar-style-classifier",
     liveHref: "https://guitar-style-classifier.vercel.app",
     summary:
-      "An audio classification pipeline with MFCCs and spectral features that reached 89% test accuracy on independently recorded guitar samples.",
-    stack: ["Python", "MFCC", "PyTorch", "TensorFlow", "Audio ML"],
+      "Built an audio classification pipeline with 89% test accuracy to identify four guitar sound categories: single notes, chords, palm-muted playing, and background noise from self-recorded audio. Processed one-second WAV clips and extracted MFCCs, RMS energy, spectral centroid, bandwidth, rolloff, and zero-crossing-rate features. Trained and evaluated a logistic regression classifier using multi-session training, validation, and test splits on independently recorded guitar samples.",
+    stack: ["Python", "MFCC", "scikit-learn", "Audio ML"],
   },
   {
     title: "Study Tracker",
@@ -67,7 +79,7 @@ export const projects = [
     href: "https://github.com/AryamaanDash/track-my-studying",
     liveHref: "https://track-my-studying.vercel.app",
     summary:
-      "A Next.js and TypeScript study tracking app for logging sessions, reviewing history, and visualizing study trends.",
+      "Developed a full-stack study tracking web application using Next.js, TypeScript, Prisma Postgres, and Vercel for logging, managing, and reviewing study sessions. Built Chart.js visualizations for study trends, session history, and progress insights, plus persistent Prisma Postgres storage for reliable user data retrieval.",
     stack: ["Next.js", "TypeScript", "Prisma", "Postgres", "Chart.js"],
   },
   {

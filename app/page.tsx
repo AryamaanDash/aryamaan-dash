@@ -5,7 +5,7 @@ import { interests, navLinks, projects, skills } from "./portfolio";
 export const metadata: Metadata = {
   title: "Aryamaan Dash",
   description:
-    "UC Irvine computer science and engineering student building embedded, machine learning, and robotics projects.",
+    "University of California-Irvine computer science and engineering student building software, embedded systems, and machine learning projects.",
 };
 
 const name = "Aryamaan Dash";
@@ -46,9 +46,9 @@ export default function Home() {
           Hello, my name is {name}.
         </h1>
         <p className="intro-copy">
-          I am a UC Irvine computer science and engineering student with a
-          mathematics minor. My interests lie within the fields of embedded systems, machine learning, and autonomous robotics, with
-          work spanning audio DSP and hardware-aware software.
+          I am a University of California-Irvine computer science and
+          engineering student with a mathematics minor and a 3.6 GPA. My work
+          spans software engineering, embedded systems, and machine learning.
         </p>
         <div className="hero-actions">
           <a className="primary-link" href="https://www.linkedin.com/in/aryamaan-dash-a8589a2b7/" target = "_blank">
@@ -107,7 +107,7 @@ export default function Home() {
 
       <footer className="site-footer">
         <span>© Aryamaan Dash</span>
-        <a href="mailto:aryamd2@uci.edu">Send me an email ↗</a>
+        <a href="mailto:aryamaan.dash@icloud.com">Send me an email ↗</a>
       </footer>
     </main>
   );
