@@ -49,14 +49,6 @@ export const skills = [
 
 export const projects = [
   {
-    title: "EcoToken",
-    type: "AI efficiency hackathon",
-    href: "https://github.com/AryamaanDash/EcoToken",
-    summary:
-      "A Chrome extension that uses a local prompt-complexity classifier to route each Gemini prompt to the lowest-cost model tier that can handle it, with an analytics dashboard showing estimated inference cost savings and CO2 emissions prevented.",
-    stack: ["Chrome Extension", "JavaScript", "Python", "FastAPI"],
-  },
-  {
     title: "Programmable Multi-Effects Guitar Pedal",
     type: "Embedded audio",
     href: "https://github.com/AryamaanDash/MultiEffectPedal",
@@ -83,12 +75,12 @@ export const projects = [
     stack: ["Next.js", "TypeScript", "Prisma", "Postgres", "Chart.js"],
   },
   {
-    title: "TeachBack: Inverted Tutoring",
-    type: "AI education",
-    href: "https://github.com/jwlee-jake/FlipLearn",
+    title: "EcoToken",
+    type: "AI efficiency hackathon",
+    href: "https://github.com/AryamaanDash/EcoToken",
     summary:
-      "A hackathon tutoring app where students teach an AI student, with memory-aware personalization and step-gated problem solving.",
-    stack: ["AI UX", "Backend Schema", "Education", "Validation"],
+      "A Chrome extension that uses a local prompt-complexity classifier to route each Gemini prompt to the lowest-cost model tier that can handle it, with an analytics dashboard showing estimated inference cost savings and CO2 emissions prevented.",
+    stack: ["Chrome Extension", "JavaScript", "Python", "FastAPI"],
   },
   {
     title: "RISC-V RV32I Single-Cycle Processor",
@@ -97,5 +89,13 @@ export const projects = [
     summary:
       "A Verilog single-cycle processor with program counter, register file, ALU, immediate generator, instruction memory, and data memory.",
     stack: ["Verilog", "Vivado", "Testbenches", "Computer Architecture"],
+  },
+  {
+    title: "TeachBack: Inverted Tutoring",
+    type: "AI education",
+    href: "https://github.com/jwlee-jake/FlipLearn",
+    summary:
+      "A hackathon tutoring app where students teach an AI student, with memory-aware personalization and step-gated problem solving.",
+    stack: ["AI UX", "Backend Schema", "Education", "Validation"],
   },
 ] as const;
