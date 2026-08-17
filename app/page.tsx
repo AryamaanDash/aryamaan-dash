@@ -8,7 +8,6 @@ export const metadata: Metadata = {
     "University of California-Irvine computer science and engineering student building software, embedded systems, and machine learning projects.",
 };
 
-const name = "Aryamaan Dash";
 const featuredProjects = projects.slice(0, 3);
 
 function HomeLink() {
@@ -42,19 +41,19 @@ export default function Home() {
       </nav>
 
       <section className="hero-section" aria-labelledby="intro-heading">
-        <h1 id="intro-heading" className="name-lockup">
-          Hello, my name is {name}.
+        <h1 id="intro-heading" className="visually-hidden">
+          About Aryamaan Dash
         </h1>
         <p className="intro-copy">
-          I am a University of California-Irvine computer science and
+          Hello, my name is Aryamaan Dash. I am a University of California-Irvine computer science and
           engineering student with a mathematics minor and a 3.6 GPA. My work
           spans software engineering, embedded systems, and machine learning.
         </p>
         <div className="hero-actions">
-          <a className="primary-link" href="https://www.linkedin.com/in/aryamaan-dash-a8589a2b7/" target = "_blank">
+          <a href="https://www.linkedin.com/in/aryamaan-dash-a8589a2b7/" target="_blank" rel="noreferrer">
             Get in touch
           </a>
-          <a href="/Aryamaan-Dash-Resume.pdf">Read my resume ↗</a>
+          <a href="/Aryamaan-Dash-Resume.pdf">Read my resume</a>
         </div>
       </section>
 
@@ -63,7 +62,6 @@ export default function Home() {
         <ul className="interest-list">
           {interests.map((interest) => (
             <li className="interest-row" key={interest.title}>
-              <span className="row-index">{interest.kicker}</span>
               <div>
                 <h3>{interest.title}</h3>
                 <p>{interest.description}</p>
@@ -84,12 +82,12 @@ export default function Home() {
           {featuredProjects.map((project) => (
             <li className="project-card" key={project.title}>
               <div>
-                <p className="project-kicker">{project.type}</p>
+                <p className="project-type">{project.type}</p>
                 <h3>{project.title}</h3>
                 <p>{project.summary}</p>
               </div>
-              <a className="row-arrow" href={project.href} target="_blank" rel="noreferrer">
-                View ↗
+              <a className="project-link" href={project.href} target="_blank" rel="noreferrer">
+                View project
               </a>
             </li>
           ))}
@@ -107,7 +105,7 @@ export default function Home() {
 
       <footer className="site-footer">
         <span>© Aryamaan Dash</span>
-        <a href="mailto:aryamaan.dash@icloud.com">Send me an email ↗</a>
+        <a href="mailto:aryamaan.dash@icloud.com">Send me an email</a>
       </footer>
     </main>
   );

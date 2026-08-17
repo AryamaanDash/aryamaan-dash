@@ -10,19 +10,16 @@ export const navLinks = [
 
 export const interests = [
   {
-    kicker: "01",
     title: "Software Engineering",
     description:
       "Responsive React.js, HTML, and CSS interfaces, with experience contributing as both a front-end developer and team lead.",
   },
   {
-    kicker: "02",
     title: "Embedded Systems",
     description:
       "Real-time C++ DSP, Verilog, ESP32 development, Daisy Seed, and soldered prototypes.",
   },
   {
-    kicker: "03",
     title: "Machine Learning",
     description:
       "Audio feature extraction, classifier evaluation, PyTorch, TensorFlow, and scikit-learn.",
@@ -75,14 +72,6 @@ export const projects = [
     stack: ["Next.js", "TypeScript", "Prisma", "Postgres", "Chart.js"],
   },
   {
-    title: "EcoToken",
-    type: "AI efficiency hackathon",
-    href: "https://github.com/AryamaanDash/EcoToken",
-    summary:
-      "A Chrome extension that uses a local prompt-complexity classifier to route each Gemini prompt to the lowest-cost model tier that can handle it, with an analytics dashboard showing estimated inference cost savings and CO2 emissions prevented.",
-    stack: ["Chrome Extension", "JavaScript", "Python", "FastAPI"],
-  },
-  {
     title: "RISC-V RV32I Single-Cycle Processor",
     type: "Digital logic",
     href: "https://github.com/AryamaanDash/single_cycle_riscv32I_processor",
@@ -90,9 +79,20 @@ export const projects = [
       "A Verilog single-cycle processor with program counter, register file, ALU, immediate generator, instruction memory, and data memory.",
     stack: ["Verilog", "Vivado", "Testbenches", "Computer Architecture"],
   },
+] as const;
+
+export const hackathonProjects = [
+  {
+    title: "EcoToken",
+    type: "AI efficiency",
+    href: "https://github.com/AryamaanDash/EcoToken",
+    summary:
+      "A Chrome extension that uses a local prompt-complexity classifier to route each Gemini prompt to the lowest-cost model tier that can handle it, with an analytics dashboard showing estimated inference cost savings and CO2 emissions prevented.",
+    stack: ["Chrome Extension", "JavaScript", "Python", "FastAPI"],
+  },
   {
     title: "TeachBack: Inverted Tutoring",
-    type: "AI education",
+    type: "Education",
     href: "https://github.com/jwlee-jake/FlipLearn",
     summary:
       "A hackathon tutoring app where students teach an AI student, with memory-aware personalization and step-gated problem solving.",

@@ -15,13 +15,16 @@ test("portfolio content is wired into the app", async () => {
   assert.match(page, /mathematics minor and a 3\.6 GPA/);
   assert.match(page, /software engineering, embedded systems, and machine learning/);
   assert.match(page, /home-link/);
-  assert.match(page, /name-lockup/);
+  assert.match(page, /Hello, my name is Aryamaan Dash\. I am a University/);
+  assert.doesNotMatch(page, /name-lockup|primary-link|row-index/);
   assert.match(page, /mailto:aryamaan\.dash@icloud\.com/);
   assert.doesNotMatch(
     page,
     /signal locked|full-stack software|brand-link|intro-card|new Date/,
   );
   assert.match(projectsPage, /Projects/);
+  assert.match(projectsPage, /Hackathon Projects/);
+  assert.match(projectsPage, /hackathonProjects/);
   assert.doesNotMatch(page, /ThemeToggle|theme-toggle|data-theme/);
   assert.doesNotMatch(projectsPage, /ThemeToggle|theme-toggle|data-theme/);
   assert.match(data, /RISC-V RV32I Single-Cycle Processor/);
@@ -33,20 +36,18 @@ test("portfolio content is wired into the app", async () => {
   assert.match(data, /TensorFlow/);
   assert.match(data, /scikit-learn/);
   assert.ok(
-    data.indexOf("EcoToken") < data.indexOf("Programmable Multi-Effects Guitar Pedal"),
-  );
-  assert.ok(
     data.indexOf("Programmable Multi-Effects Guitar Pedal") <
       data.indexOf("Guitar Audio Classification Model"),
   );
-  assert.ok(data.indexOf("Guitar Audio Classification Model") < data.indexOf("Study Tracker"));
-  assert.ok(data.indexOf("Study Tracker") < data.indexOf("TeachBack: Inverted Tutoring"));
   assert.ok(
-    data.indexOf("TeachBack: Inverted Tutoring") <
-      data.indexOf("RISC-V RV32I Single-Cycle Processor"),
+    data.indexOf("Guitar Audio Classification Model") < data.indexOf("Study Tracker"),
   );
-  assert.match(css, /@keyframes letter-rise/);
-  assert.match(css, /@keyframes scan/);
+  assert.ok(data.indexOf("Study Tracker") < data.indexOf("RISC-V RV32I Single-Cycle Processor"));
+  assert.ok(
+    data.indexOf("RISC-V RV32I Single-Cycle Processor") < data.indexOf("EcoToken"),
+  );
+  assert.ok(data.indexOf("EcoToken") < data.indexOf("TeachBack: Inverted Tutoring"));
+  assert.doesNotMatch(css, /@keyframes letter-rise|@keyframes scan|border-radius:\s*999px/);
   assert.doesNotMatch(css, /data-theme|color-scheme:\s*dark/);
   assert.match(layout, /Aryamaan Dash/);
   assert.doesNotMatch(layout, /theme-script|localStorage|data-theme/);
