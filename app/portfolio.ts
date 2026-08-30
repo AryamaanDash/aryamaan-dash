@@ -79,6 +79,14 @@ export const projects = [
       "A Verilog single-cycle processor with program counter, register file, ALU, immediate generator, instruction memory, and data memory.",
     stack: ["Verilog", "Vivado", "Testbenches", "Computer Architecture"],
   },
+  {
+    title: "Reusable Embedded C Library",
+    type: "Embedded Software",
+    href: "https://github.com/AryamaanDash/embedded_c_library",
+    summary:
+      "Portable embedded C library providing fixed-memory data structures, event-driven state machines, and hardware abstractions for STM32 firmware.",
+    stack: ["Embedded C", "Computer Architecture", "STM32 HAL",],
+  },
 ] as const;
 
 export const hackathonProjects = [
