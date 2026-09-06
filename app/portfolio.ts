@@ -47,6 +47,15 @@ export const skills = [
 
 export const projects = [
   {
+    title: "Study Tracker",
+    type: "Study tool",
+    href: "https://github.com/AryamaanDash/track-my-studying",
+    liveHref: "https://track-my-studying.vercel.app",
+    summary:
+      "Developed and deployed a responsive full-stack study journal using Next.js, TypeScript, Prisma, PostgreSQL, and Vercel. Implemented credential-based authentication, study-session CRUD, journal entries, a persistent focus timer, weekly reflections, and interactive calendar and Recharts analytics for reviewing study patterns across multiple timeframes. Added server-side caching, secure password hashing, and reliable per-user data persistence.",
+    stack: ["Next.js", "TypeScript", "Prisma Postgres", "PostgreSQL", "Recharts", "Auth.js", "Vercel", "Node.js", "Docker", "Docker Compose"],
+  },
+  {
     title: "Programmable Multi-Effects Guitar Pedal",
     type: "Embedded audio",
     href: "https://github.com/AryamaanDash/MultiEffectPedal",
@@ -62,15 +71,6 @@ export const projects = [
     summary:
       "Built an audio classification pipeline with 89% test accuracy to identify four guitar sound categories: single notes, chords, palm-muted playing, and background noise from self-recorded audio. Processed one-second WAV clips and extracted MFCCs, RMS energy, spectral centroid, bandwidth, rolloff, and zero-crossing-rate features. Trained and evaluated a logistic regression classifier using multi-session training, validation, and test splits on independently recorded guitar samples.",
     stack: ["Python", "MFCC", "scikit-learn", "Audio ML"],
-  },
-  {
-    title: "Study Tracker",
-    type: "Study tool",
-    href: "https://github.com/AryamaanDash/track-my-studying",
-    liveHref: "https://track-my-studying.vercel.app",
-    summary:
-      "Developed and deployed a responsive full-stack study journal using Next.js, TypeScript, Prisma, PostgreSQL, and Vercel. Implemented credential-based authentication, study-session CRUD, journal entries, a persistent focus timer, weekly reflections, and interactive calendar and Recharts analytics for reviewing study patterns across multiple timeframes. Added server-side caching, secure password hashing, and reliable per-user data persistence.",
-    stack: ["Next.js", "TypeScript", "Prisma Postgres", "PostgreSQL", "Recharts", "Auth.js", "Vercel", "Node.js", "Docker", "Docker Compose"],
   },
   {
     title: "RISC-V RV32I Single-Cycle Processor",
