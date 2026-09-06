@@ -32,12 +32,13 @@ export const skills = [
   "TypeScript",
   "HTML/CSS",
   "Verilog",
-  "R",
   "Git",
+  "Docker",
   "Vivado",
   "Next.js",
   "ESP32",
-  "Daisy Seed",
+  "STM32",
+  "STM32CubeMX",
   "Soldering",
   "PyTorch",
   "TensorFlow",
@@ -68,8 +69,8 @@ export const projects = [
     href: "https://github.com/AryamaanDash/track-my-studying",
     liveHref: "https://track-my-studying.vercel.app",
     summary:
-      "Developed a full-stack study tracking web application using Next.js, TypeScript, Prisma Postgres, and Vercel for logging, managing, and reviewing study sessions. Built Chart.js visualizations for study trends, session history, and progress insights, plus persistent Prisma Postgres storage for reliable user data retrieval.",
-    stack: ["Next.js", "TypeScript", "Prisma", "Postgres", "Chart.js"],
+      "Developed and deployed a responsive full-stack study journal using Next.js, TypeScript, Prisma, PostgreSQL, and Vercel. Implemented credential-based authentication, study-session CRUD, journal entries, a persistent focus timer, weekly reflections, and interactive calendar and Recharts analytics for reviewing study patterns across multiple timeframes. Added server-side caching, secure password hashing, and reliable per-user data persistence.",
+    stack: ["Next.js", "TypeScript", "Prisma Postgres", "PostgreSQL", "Recharts", "Auth.js", "Vercel", "Node.js", "Docker", "Docker Compose"],
   },
   {
     title: "RISC-V RV32I Single-Cycle Processor",
@@ -87,6 +88,14 @@ export const projects = [
       "Portable embedded C library providing fixed-memory data structures, event-driven state machines, and hardware abstractions for STM32 firmware.",
     stack: ["Embedded C", "Computer Architecture", "STM32 HAL",],
   },
+  {
+    title: "CPU Optimized Inference Engine (WIP)",
+    type: "Computer Architecture / Machine Learning",
+    href: "https://github.com/AryamaanDash/cpu_optimized_inference_engine",
+    summary:
+      "CPU neural-network inference engine in C++ from scratchBuilt a CPU neural-network inference engine from scratch in C++, implementing matrix multiplication, dense layers, activations, convolution, and model execution. Optimized performance on Apple Silicon through cache-aware tiling, ARM NEON SIMD, multithreading, and INT8 quantization, using reproducible benchmarks and profiling to compare against Apple Accelerate.",
+    stack: ["C++20", "Cmake", "Clang/LLVM", "ARM64", "Google Benchmark", "Xcode Instruments", "Python/NumPy", "Apple Accelerate", "Git"]
+  }
 ] as const;
 
 export const hackathonProjects = [
