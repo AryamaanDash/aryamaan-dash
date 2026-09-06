@@ -79,8 +79,8 @@ export default function ProjectsPage() {
       <header className="page-heading">
         <h1>Projects</h1>
         <p>
-          Selected work across AI efficiency, embedded audio, machine learning,
-          study tools, AI education, and processor design.
+          Selected work across full stack web apps, improving AI efficiency, embedded systems, machine learning,
+          AI for education, and processor design.
         </p>
       </header>
 

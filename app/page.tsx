@@ -45,8 +45,7 @@ export default function Home() {
           About Aryamaan Dash
         </h1>
         <p className="intro-copy">
-          Hello, my name is Aryamaan Dash. I am a University of California-Irvine computer science and
-          engineering student with a mathematics minor and a 3.6 GPA. My work
+          Hello, my name is <b>Aryamaan Dash</b>. I'm pursuing a B.S. in Computer Science & Engineering and a Mathematics minor. My work
           spans software engineering, embedded systems, and machine learning.
         </p>
         <div className="hero-actions">
@@ -74,7 +73,7 @@ export default function Home() {
       <section className="section-block" aria-labelledby="projects-heading">
         <div className="section-heading-row">
           <h2 id="projects-heading">Selected Projects</h2>
-          <Link href="/projects" className="text-link">
+          <Link href="/projects" className="text-link projects-button">
             View all projects -&gt;
           </Link>
         </div>

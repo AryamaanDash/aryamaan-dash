@@ -64,6 +64,14 @@ export const projects = [
     stack: ["C++", "DaisySP", "DSP", "Soldering"],
   },
   {
+    title: "Reusable Embedded C Library",
+    type: "Embedded Software",
+    href: "https://github.com/AryamaanDash/embedded_c_library",
+    summary:
+    "Developed a reusable embedded C library with 5 core modules: GPIO, UART, ring buffer, FSM, and button debouncing using defensive input validation and static/caller-provided memory for embedded environments. Designed a platform abstraction layer separating hardware-independent GPIO/UART APIs from STM32G071 HAL implementations, translating portable driver types and status codes to platform-specific HAL operations. Implemented an O(1) circular byte buffer, configurable time-based button debouncing with press/release events, and a table-driven state machine that validates states, events, and duplicate transitions before execution.",
+    stack: ["Embedded C", "Computer Architecture", "STM32 HAL",],
+  },
+  {
     title: "Guitar Audio Classification Model",
     type: "Machine learning",
     href: "https://github.com/AryamaanDash/guitar-style-classifier",
@@ -73,20 +81,29 @@ export const projects = [
     stack: ["Python", "MFCC", "scikit-learn", "Audio ML"],
   },
   {
+    title: "Seam Carving Web App",
+    type: "Image processing",
+    href: "https://github.com/AryamaanDash/seamcarving",
+    liveHref: "https://seamcarving.vercel.app",
+    summary:
+      "Built and deployed a full-stack image resizing web app with upload previews, axis controls, projected dimensions, and downloadable results. Engineered an API route that validates PNG, JPEG, and WebP uploads up to 12 MB, creates isolated temporary jobs, invokes the Python processor, enforces timeouts, and cleans up files. Implemented content-aware resizing using Sobel energy maps, dynamic programming, and seam backtracking to remove low-energy pixels while preserving image content.",
+    stack: ["Next.js", "React", "Node.js", "TypeScript", "Python", "NumPy"],
+  },
+  {
+    title: "URL Shortener",
+    type: "Backend / System design",
+    href: "https://github.com/AryamaanDash/url-shortener",
+    summary:
+      "Built a URL shortening API with Python, Flask, PostgreSQL, and Redis. Generated compact Base62 short codes from database IDs and implemented HTTP redirects with Redis cache lookups, PostgreSQL fallback, and cache repopulation. Containerized the application, database, and cache with Docker Compose, including persistent database storage, service health checks, and a health endpoint.",
+    stack: ["Python", "Flask", "PostgreSQL", "Redis", "Docker", "Docker Compose"],
+  },
+  {
     title: "RISC-V RV32I Single-Cycle Processor",
     type: "Digital logic",
     href: "https://github.com/AryamaanDash/single_cycle_riscv32I_processor",
     summary:
-      "A Verilog single-cycle processor with program counter, register file, ALU, immediate generator, instruction memory, and data memory.",
+      "A Verilog single-cycle processor with program counter, register file, ALU, immediate generator, instruction memory, and data memory. In addition, there are testbenches verifying behavior of each independent module. Entirely written in Verilog.",
     stack: ["Verilog", "Vivado", "Testbenches", "Computer Architecture"],
-  },
-  {
-    title: "Reusable Embedded C Library",
-    type: "Embedded Software",
-    href: "https://github.com/AryamaanDash/embedded_c_library",
-    summary:
-      "Portable embedded C library providing fixed-memory data structures, event-driven state machines, and hardware abstractions for STM32 firmware.",
-    stack: ["Embedded C", "Computer Architecture", "STM32 HAL",],
   },
   {
     title: "CPU Optimized Inference Engine (WIP)",

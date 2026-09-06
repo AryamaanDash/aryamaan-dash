@@ -160,6 +160,19 @@ button:focus-visible {
   font-size: 0.78rem;
 }
 
+.projects-button {
+  display: inline-flex;
+  padding: 8px 12px;
+  border: 1px solid var(--foreground);
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.projects-button:hover {
+  background: var(--hover);
+  color: var(--foreground);
+}
+
 .interest-list,
 .project-list,
 .skill-strip {
