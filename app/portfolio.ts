@@ -15,14 +15,14 @@ export const interests = [
       "Responsive React.js, HTML, and CSS interfaces, with experience contributing as both a front-end developer and team lead.",
   },
   {
-    title: "Embedded Systems",
-    description:
-      "Real-time C++ DSP, Verilog, ESP32 development, Daisy Seed, and soldered prototypes.",
-  },
-  {
     title: "Machine Learning",
     description:
       "Audio feature extraction, classifier evaluation, PyTorch, TensorFlow, and scikit-learn.",
+  },
+  {
+    title: "Low Level Systems Programming",
+    description:
+      "Interested in low-level systems programming, memory management, and how software interacts with hardware.",
   },
 ] as const;
 
@@ -73,12 +73,36 @@ export const projects = [
   },
   {
     title: "Guitar Audio Classification Model",
-    type: "Machine learning",
+    type: "Machine Learning, Data Processing",
     href: "https://github.com/AryamaanDash/guitar-style-classifier",
     liveHref: "https://guitar-style-classifier.vercel.app",
     summary:
       "Built an audio classification pipeline with 89% test accuracy to identify four guitar sound categories: single notes, chords, palm-muted playing, and background noise from self-recorded audio. Processed one-second WAV clips and extracted MFCCs, RMS energy, spectral centroid, bandwidth, rolloff, and zero-crossing-rate features. Trained and evaluated a logistic regression classifier using multi-session training, validation, and test splits on independently recorded guitar samples.",
     stack: ["Python", "MFCC", "scikit-learn", "Audio ML"],
+  },
+  {
+    title: "CPU Optimized Inference Engine (WIP)",
+    type: "Computer Architecture / Machine Learning",
+    href: "https://github.com/AryamaanDash/cpu_optimized_inference_engine",
+    summary:
+      "CPU neural-network inference engine in C++ from scratch. Built a CPU neural-network inference engine from scratch in C++, implementing matrix multiplication, dense layers, activations, convolution, and model execution. Optimized performance on Apple Silicon through cache-aware tiling, ARM NEON SIMD, multithreading, and INT8 quantization, using reproducible benchmarks and profiling to compare against Apple Accelerate.",
+    stack: ["C++20", "Cmake", "Clang/LLVM", "ARM64", "Google Benchmark", "Xcode Instruments", "Python/NumPy", "Apple Accelerate", "Git"]
+  },
+  {
+    title: "Post-Disaster Building Damage Classifier",
+    type: "Machine Learning",
+    href: "https://github.com/AryamaanDash/satellite-damage-classifier",
+    summary:
+      "Developed a CNN-based computer vision pipeline to classify structural damage from pre- and post-disaster satellite imagery across four severity levels, using image preprocessing, augmentation, and transfer learning. Built an evaluation pipeline using precision, recall, F1 score, confusion matrices, and class-distribution analysis to diagnose model performance on imbalanced disaster-damage categories. Implemented visual inference outputs that overlay predicted damage severity on satellite imagery to support rapid identification of heavily damaged areas following natural disasters.",
+    stack: ["Python, PyTorch, OpenCV, NumPy, Pandas, Scikit-learn"],
+  },
+  {
+    title: "RISC-V RV32I Single-Cycle Processor",
+    type: "Digital logic",
+    href: "https://github.com/AryamaanDash/single_cycle_riscv32I_processor",
+    summary:
+      "A Verilog single-cycle processor with program counter, register file, ALU, immediate generator, instruction memory, and data memory. In addition, there are testbenches verifying behavior of each independent module. Entirely written in Verilog.",
+    stack: ["Verilog", "Vivado", "Testbenches", "Computer Architecture"],
   },
   {
     title: "Seam Carving Web App",
@@ -97,22 +121,6 @@ export const projects = [
       "Built a URL shortening API with Python, Flask, PostgreSQL, and Redis. Generated compact Base62 short codes from database IDs and implemented HTTP redirects with Redis cache lookups, PostgreSQL fallback, and cache repopulation. Containerized the application, database, and cache with Docker Compose, including persistent database storage, service health checks, and a health endpoint.",
     stack: ["Python", "Flask", "PostgreSQL", "Redis", "Docker", "Docker Compose"],
   },
-  {
-    title: "RISC-V RV32I Single-Cycle Processor",
-    type: "Digital logic",
-    href: "https://github.com/AryamaanDash/single_cycle_riscv32I_processor",
-    summary:
-      "A Verilog single-cycle processor with program counter, register file, ALU, immediate generator, instruction memory, and data memory. In addition, there are testbenches verifying behavior of each independent module. Entirely written in Verilog.",
-    stack: ["Verilog", "Vivado", "Testbenches", "Computer Architecture"],
-  },
-  {
-    title: "CPU Optimized Inference Engine (WIP)",
-    type: "Computer Architecture / Machine Learning",
-    href: "https://github.com/AryamaanDash/cpu_optimized_inference_engine",
-    summary:
-      "CPU neural-network inference engine in C++ from scratchBuilt a CPU neural-network inference engine from scratch in C++, implementing matrix multiplication, dense layers, activations, convolution, and model execution. Optimized performance on Apple Silicon through cache-aware tiling, ARM NEON SIMD, multithreading, and INT8 quantization, using reproducible benchmarks and profiling to compare against Apple Accelerate.",
-    stack: ["C++20", "Cmake", "Clang/LLVM", "ARM64", "Google Benchmark", "Xcode Instruments", "Python/NumPy", "Apple Accelerate", "Git"]
-  }
 ] as const;
 
 export const hackathonProjects = [
